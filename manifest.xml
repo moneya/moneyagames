@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Moneya Games</name>
+	<author>moneya</author>
+	<version>1.4</version>
+	<category>dev</category>
+	<description>An Enhanced games plugin for elgg</description>
+	<website>http://game.getdino.com</website>
+	<copyright>(c) Getdino! </copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_release</type>
+		<version>1.8</version>
+	</requires>
+</plugin_manifest>
