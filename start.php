@@ -1,30 +1,30 @@
 <?php
 
 	/**
-	 * Elgg Miracle Gallery Games plugin
+	 * Elgg Moneya Games plugin
 	 *
 	 * @package Elgg Moneya Games
 	 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-	 * @author sociabie gitdino.com
+	 * @author sociabie getdino.com
 	 * @URL http://www.miracledesigner.com.br
 	 * @copyright (c) Miracle Designer 
 	 */
 
-function moneyagames_init() {
+function games_init() {
 global $CONFIG;
-elgg_register_page_handler('moneyagames','moneyagames_page_handler');
+elgg_register_page_handler('games','games_page_handler');
 				
 			// Add menu link
-$item = new ElggMenuItem('moneyagames', elgg_echo('Games'), 'moneyagames');
+$item = new ElggMenuItem('games', elgg_echo('Games'), 'games');
 elgg_register_menu_item('site', $item);
 
 if(!elgg_in_context('admin')){
 elgg_register_menu_item('page', array(
-			'section' => 'moneyagames',
-			'name' => 'moneyagames',
-			'text' => elgg_echo('moneyagames'),
-			'title' => elgg_echo('moneyagames'),
-			'href' => "/moneyagames",
+			'section' => 'games',
+			'name' => 'games',
+			'text' => elgg_echo('games'),
+			'title' => elgg_echo('games'),
+			'href' => "/games",
 		//	'contexts' => array('activity'),
 			'link_class' => 	'elgg-state-selected',
 			'priority' => 100,
@@ -32,7 +32,7 @@ elgg_register_menu_item('page', array(
 	}
 }
 
-function moneyagames_page_handler($page) {
+function games_page_handler($page) {
 	$base = elgg_get_plugins_path() . 'moneyagames';
 
 	if (!isset($page[0])) {
@@ -48,5 +48,5 @@ require_once "$base/index.php";
 return true;
 }
 	
-elgg_register_event_handler('init', 'system', 'moneyagames_init');
+elgg_register_event_handler('init', 'system', 'games_init');
 ?>
