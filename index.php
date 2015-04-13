@@ -5,9 +5,9 @@
 	 *
 	 * @package Elgg Moneya Games
 	 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU Public License version 2
-	 * @author Felix Rubens, Moneya Designer
-	 * @URL http://www.Moneyadesigner.com.br
-	 * @copyright (c) Moneya Designer 
+	 * @author Moneya
+	 * @URL http://game.getdino.com
+	 * @copyright (c) Getdino Games
 	 */
 	 
 require_once(dirname(dirname(dirname(__FILE__))) . "/engine/start.php");
