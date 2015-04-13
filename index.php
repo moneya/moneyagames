@@ -20,7 +20,7 @@ switch ($vars['page']) {
 		break;
 }
 
-$title = elgg_echo("Games Moneya");
+$title = elgg_echo("Games");
 	
 $body = elgg_view_layout('one_column', array(
 	'content' => $content,
